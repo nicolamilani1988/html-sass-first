@@ -1,16 +1,57 @@
-body{
-    background-color: pink;
+$textColor : blue;
+$textColor2: green;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background-color:lightblue;
+}
+
 
 .container{
     
-    background-color: red;
+    background-color: lightseagreen;
+    padding: 20px;
 
-    h1{
-        color: blue;
+    >*{
+        margin: 20px 0;
+    }
+
+    h1, button{
+        color: $textColor;
+    }
+
+    button{
+        background-color: $textColor2;
+    }
+
+    p{
+        color: red;
     }
 }
 
-h1{
-    color: green;
+.row {
+    p{
+        color: $textColor;
+    }
+}
+
+h1,button{
+    color: $textColor2;
+}
+
+button{
+    background-color: $textColor;
+}
+
+p{
+    color: $textColor2;
+}
+
+button{
+    padding: 10px 20px;
 }

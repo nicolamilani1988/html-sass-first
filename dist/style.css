@@ -1,14 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: pink;
+  background-color: lightblue;
 }
 
 .container {
-  background-color: red;
+  background-color: lightseagreen;
+  padding: 20px;
 }
-.container h1 {
+.container > * {
+  margin: 20px 0;
+}
+.container h1, .container button {
+  color: blue;
+}
+.container button {
+  background-color: green;
+}
+.container p {
+  color: red;
+}
+
+.row p {
   color: blue;
 }
 
-h1 {
+h1, button {
   color: green;
+}
+
+button {
+  background-color: blue;
+}
+
+p {
+  color: green;
+}
+
+button {
+  padding: 10px 20px;
 }
